@@ -60,10 +60,10 @@ public class analysis {
             if (isSymbol(tem).length() > 0) {
                 String symbol = isSymbol(tem);
                 System.out.println(map.get(symbol));
-                if (tem.length() > 1 && tem.charAt(1) != '=') {
-                    spl(tem.substring(1));
-                } else if (tem.length() > 2 && tem.charAt(1) == '=') {
+                if(symbol.equals("==")) {
                     spl(tem.substring(2));
+                } else {
+                   spl(tem.substring(1));
                 }
                 continue;
             }
