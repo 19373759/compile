@@ -1,8 +1,0 @@
-[jobs.lab1]
-
-image = { source = "dockerfile", path = ".", tag = "pascal-lex-example" }
-
-# 假如你用的是 Java
-run = [
-  "./grammar $input $ir",
-]
